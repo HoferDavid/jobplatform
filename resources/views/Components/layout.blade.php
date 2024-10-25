@@ -17,7 +17,7 @@
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
                             <img class="h-8 w-8"
-                                src="./img/logo.png"
+                                src="/img/logo.png"
                                 alt="Your Company">
                         </div>
                         <div class="hidden md:block">
@@ -50,7 +50,7 @@
                                         <span class="absolute -inset-1.5"></span>
                                         <span class="sr-only">Open user menu</span>
                                         <img class="h-8 w-8 rounded-full"
-                                            src="./img/supermario.jpg"
+                                            src="/img/supermario.jpg"
                                             alt="">
                                     </button>
                                 </div>
@@ -92,7 +92,7 @@
                     <div class="flex items-center px-5">
                         <div class="flex-shrink-0">
                             <img class="h-10 w-10 rounded-full"
-                                src="./img/supermario.jpg"
+                                src="/img/supermario.jpg"
                                 alt="">
                         </div>
                         <div class="ml-3">
