@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/jobs', function () {
-    $jobs = Job::with('employer')->latest()->simplePaginate(3);
+    $jobs = Job::with('employer')->latest( )->simplePaginate(3);
     
     return view('jobs.index', [
         'jobs' => $jobs
@@ -25,8 +25,10 @@ Route::get('/jobs/{id}', function ($id) {
 });
 
 Route::post('/jobs', function () {
-    // dd(request()->all());
-    // validation
+    request()->validate([
+        'title' => ['required', 'min:3'],
+        'salary' => ['required']
+    ]);
 
     Job::create([
         'title' => request('title'),
